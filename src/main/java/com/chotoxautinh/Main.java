@@ -6,10 +6,11 @@ import com.chotoxautinh.controller.RootController;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.stage.Stage;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 public class Main extends Application {
 
@@ -21,9 +22,10 @@ public class Main extends Application {
 		this.primaryStage = primaryStage;
 		this.primaryStage.setTitle("Test");
 		this.primaryStage.setResizable(false);
-		
+		this.primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("/img/dog-icon.jpg")));
+
 		initRootLayout();
-		
+
 		showStartView();
 	}
 
@@ -36,10 +38,10 @@ public class Main extends Application {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(getClass().getResource("/view/RootLayout.fxml"));
 			rootLayout = (BorderPane) loader.load();
-			
+
 			// Give the controller access to the main app.
-	        RootController controller = loader.getController();
-	        controller.setMainApp(this);
+			RootController controller = loader.getController();
+			controller.setMainApp(this);
 
 			// Show the scene containing the root layout.
 			Scene scene = new Scene(rootLayout);
@@ -50,38 +52,39 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 	}
-	
-	/**
-     * Shows the person overview inside the root layout.
-     */
-    public void showStartView() {
-        try {
-            // Load person overview.
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/view/BeginLayout.fxml"));
-            VBox startView = (VBox) loader.load();
 
-            // Set person overview into the center of root layout.
-            rootLayout.setCenter(startView);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-    
-    /**
-     * Close window
-     */
-    public void closeStage(){
-    	this.primaryStage.close();
-    }
-	
-    /**
-     * Returns the main stage.
-     * @return
-     */
-    public Stage getPrimaryStage() {
-        return primaryStage;
-    }
+	/**
+	 * Shows the person overview inside the root layout.
+	 */
+	public void showStartView() {
+		try {
+			// Load person overview.
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(getClass().getResource("/view/BeginLayout.fxml"));
+			VBox startView = (VBox) loader.load();
+
+			// Set person overview into the center of root layout.
+			rootLayout.setCenter(startView);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * Close window
+	 */
+	public void closeStage() {
+		this.primaryStage.close();
+	}
+
+	/**
+	 * Returns the main stage.
+	 * 
+	 * @return
+	 */
+	public Stage getPrimaryStage() {
+		return primaryStage;
+	}
 
 	public static void main(String[] args) {
 		launch(args);
