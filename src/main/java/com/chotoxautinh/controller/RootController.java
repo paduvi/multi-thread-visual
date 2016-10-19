@@ -8,6 +8,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
+import javafx.scene.control.Tooltip;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
@@ -38,15 +39,19 @@ public class RootController {
 	private void loadBtnIcon() {
 		Image imageHome = new Image(getClass().getResourceAsStream("/img/home.png"));
 		homeBtn.setGraphic(new ImageView(imageHome));
+		homeBtn.setTooltip(new Tooltip("Home Page"));
 
 		Image imageToggle = new Image(getClass().getResourceAsStream("/img/menu-toggle.png"));
 		toggleMenuBtn.setGraphic(new ImageView(imageToggle));
+		toggleMenuBtn.setTooltip(new Tooltip("Toggle Menu"));
 
 		Image imageQuestion = new Image(getClass().getResourceAsStream("/img/question.png"));
 		questionBtn.setGraphic(new ImageView(imageQuestion));
+		questionBtn.setTooltip(new Tooltip("About"));
 
 		Image imageExit = new Image(getClass().getResourceAsStream("/img/exit.png"));
 		exitBtn.setGraphic(new ImageView(imageExit));
+		exitBtn.setTooltip(new Tooltip("Exit"));
 	}
 
 	@FXML
