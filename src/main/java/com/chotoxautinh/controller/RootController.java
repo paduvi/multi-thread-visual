@@ -152,6 +152,12 @@ public class RootController {
 
 	@FXML
 	private void handleHomeAction(ActionEvent event) {
+		if (sideBar.getTranslateX() == 0) {
+			TranslateTransition toggleSideBar = new TranslateTransition(Duration.seconds(0.3), sideBar);
+			toggleSideBar.setByX(-350);
+
+			toggleSideBar.play();
+		}
 		showView(0);
 	}
 

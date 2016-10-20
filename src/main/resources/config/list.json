@@ -5,6 +5,12 @@
 	"title": "Basic Concept: Blocking vs Non-Blocking",
 	"view": "NonBlockingLayout"
 },{
+	"title": "Demo: Delay Button",
+	"view": "DelayButtonLayout"
+},{
 	"title": "Fact: Short Of Cores",
 	"view": "ShortCpuView"
+},{
+	"title": "Example: Operate Process",
+	"view": "OperateProcessView"
 }]
