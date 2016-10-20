@@ -1,4 +1,10 @@
 [{
-	"title": "Basic Concept: SingleThread vs MultiThread",
+	"title": "Basic Concept: Single-Thread vs Multi-Thread",
 	"view": "SingleMultiLayout"
+},{
+	"title": "Basic Concept: Blocking vs Non-Blocking",
+	"view": "NonBlockingLayout"
+},{
+	"title": "Fact: Short Of Cores",
+	"view": "ShortCpuView"
 }]

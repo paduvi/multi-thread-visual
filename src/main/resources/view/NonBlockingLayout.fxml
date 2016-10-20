@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.FlowPane?>
+
+
+<FlowPane alignment="CENTER" prefHeight="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <ImageView id="nonBlockingImage" fitWidth="575.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/processor03-b_tcm100-878818.gif" />
+         </image>
+      </ImageView>
+   </children>
+</FlowPane>

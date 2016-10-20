@@ -41,7 +41,7 @@ public class Main extends Application {
 			controller.setMainApp(this);
 
 			// Show the scene containing the root layout.
-			Scene scene = new Scene(rootLayout, 450, 600);
+			Scene scene = new Scene(rootLayout, 600, 500);
 			scene.getStylesheets().add(getClass().getResource("/style/application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
