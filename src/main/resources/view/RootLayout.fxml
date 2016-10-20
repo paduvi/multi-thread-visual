@@ -9,13 +9,12 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 
-
-<AnchorPane prefHeight="600.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chotoxautinh.controller.RootController">
+<AnchorPane maxHeight="600.0" minHeight="600.0" prefHeight="600.0" prefWidth="450.0" style="-fx-background-color: #DEDEDE;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chotoxautinh.controller.RootController">
    <children>
-      <StackPane fx:id="stackPane" layoutX="28.0" style="-fx-background-color: #FFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <HBox fx:id="sideBar" translateX="-350.0">
+      <StackPane fx:id="stackPane" layoutX="28.0" prefHeight="600.0" style="-fx-background-color: #FFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <HBox fx:id="sideBar" maxHeight="600.0" minHeight="600.0" prefHeight="600.0" translateX="-350.0">
          <children>
-            <ListView fx:id="listMenu" prefHeight="200.0" prefWidth="350.0" styleClass="menuList" />
+            <ListView fx:id="listMenu" prefWidth="350.0" styleClass="menuList" />
             <VBox prefHeight="600.0" spacing="10.0" style="-fx-background-color: #4DB6AC;" BorderPane.alignment="CENTER">
                <children>
                   <Button fx:id="homeBtn" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" graphicTextGap="0.0" mnemonicParsing="false" onAction="#handleHomeAction" styleClass="menuBtn" />

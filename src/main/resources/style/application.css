@@ -15,6 +15,7 @@
 .menuList .list-cell{
 	-fx-background-color:  #4DB6AC;
 	-fx-text-fill: #FFF;
+	-fx-font-weight: bold;
 	-fx-padding: 10.0px;
 	-fx-border-width: 0.0 0.0 1.0px 0.0;
 	-fx-border-color: #26a69a;
