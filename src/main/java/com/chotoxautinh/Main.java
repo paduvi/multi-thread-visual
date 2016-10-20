@@ -8,13 +8,11 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
 
-	private BorderPane rootLayout;
 	private Stage primaryStage;
 
 	@Override
@@ -26,7 +24,6 @@ public class Main extends Application {
 
 		initRootLayout();
 
-		showStartView();
 	}
 
 	/**
@@ -37,44 +34,20 @@ public class Main extends Application {
 			// Load root layout from fxml file.
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(getClass().getResource("/view/RootLayout.fxml"));
-			rootLayout = (BorderPane) loader.load();
+			AnchorPane rootLayout = (AnchorPane) loader.load();
 
 			// Give the controller access to the main app.
 			RootController controller = loader.getController();
 			controller.setMainApp(this);
 
 			// Show the scene containing the root layout.
-			Scene scene = new Scene(rootLayout);
+			Scene scene = new Scene(rootLayout, 450, 600);
 			scene.getStylesheets().add(getClass().getResource("/style/application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}
-
-	/**
-	 * Shows the person overview inside the root layout.
-	 */
-	public void showStartView() {
-		try {
-			// Load person overview.
-			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(getClass().getResource("/view/BeginLayout.fxml"));
-			VBox startView = (VBox) loader.load();
-
-			// Set person overview into the center of root layout.
-			rootLayout.setCenter(startView);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
-	/**
-	 * Close window
-	 */
-	public void closeStage() {
-		this.primaryStage.close();
 	}
 
 	/**

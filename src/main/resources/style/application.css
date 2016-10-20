@@ -8,11 +8,14 @@
 
 .menuList {
 	-fx-background-color:  #4DB6AC;
-	-fx-max-width: 0.0;
-}
-
-.expandedMenuList {
 	-fx-border-width: 0.0 1.0px 0.0 0.0;
 	-fx-border-color:  #26a69a;
-	-fx-max-width: 200.0px;
+}
+
+.menuList .list-cell{
+	-fx-background-color:  #4DB6AC;
+	-fx-text-fill: #FFF;
+	-fx-padding: 10.0px;
+	-fx-border-width: 0.0 0.0 1.0px 0.0;
+	-fx-border-color: #26a69a;
 }
