@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.FlowPane?>
 
 
-<FlowPane alignment="CENTER" columnHalignment="CENTER" orientation="VERTICAL" prefHeight="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.chotoxautinh.controller.ObstracleAsynchronousController">
+<FlowPane alignment="CENTER" columnHalignment="CENTER" orientation="VERTICAL" prefHeight="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.chotoxautinh.controller.ObstacleAsynchronousController">
    <children>
       <Label text="1 Big Thread:">
          <font>

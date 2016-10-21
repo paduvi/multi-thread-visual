@@ -14,12 +14,15 @@
 	"title": "Demo: Micro-service",
 	"view": "MicroServiceLayout"
 },{
-	"title": "Obstracle: Short Of Cores",
+	"title": "Obstacle: Short Of Cores",
 	"view": "ShortCpuView"
 },{
 	"title": "Example: Operate Process",
 	"view": "OperateProcessView"
 },{
-	"title": "Obstracle: Manage Asynchronous",
-	"view": "ObstracleAsynchronousView"
+	"title": "Obstacle: Manage Asynchronous",
+	"view": "ObstacleAsynchronousView"
+},{
+	"title": "Example: Manage Asynchronous",
+	"view": "ExampleAsynchronousView"
 }]

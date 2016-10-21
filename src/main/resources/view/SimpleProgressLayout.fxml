@@ -23,7 +23,7 @@
             <Insets bottom="15.0" top="15.0" />
          </FlowPane.margin>
       </Button>
-      <TextArea fx:id="textArea" prefWidth="500.0">
+      <TextArea fx:id="textArea" editable="false" prefWidth="500.0">
          <FlowPane.margin>
             <Insets top="15.0" />
          </FlowPane.margin>

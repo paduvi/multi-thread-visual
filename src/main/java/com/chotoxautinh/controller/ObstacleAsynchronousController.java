@@ -16,7 +16,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ProgressBar;
 
-public class ObstracleAsynchronousController {
+public class ObstacleAsynchronousController {
 
 	@FXML
 	private ProgressBar singleProgressBar;
@@ -50,11 +50,11 @@ public class ObstracleAsynchronousController {
 			public void run() {
 				try {
 					executor.invokeAll(todo);
-					executor.shutdown();
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} finally {
+					executor.shutdown();
 					startBtn.setDisable(false);
 				}
 			}

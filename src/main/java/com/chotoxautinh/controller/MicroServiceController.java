@@ -51,6 +51,7 @@ public class MicroServiceController {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} finally {
+					executor.shutdown();
 					startBtn.setDisable(false);
 				}
 			}
