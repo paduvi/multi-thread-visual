@@ -1,28 +1,40 @@
 [{
-	"title": "Basic Concept: Single-Thread vs Multi-Thread",
+	"title": "1. Basic Concept: Single-Thread vs Multi-Thread",
 	"view": "SingleMultiLayout"
 },{
-	"title": "Basic Concept: Blocking vs Non-Blocking",
+	"title": "2. Basic Concept: Blocking vs Non-Blocking",
 	"view": "NonBlockingLayout"
 },{
-	"title": "Demo: Delay Button",
+	"title": "3. Demo: Delay Button",
 	"view": "DelayButtonLayout"
 },{
-	"title": "Demo: Simple Progress",
+	"title": "4. Demo: Simple Progress",
 	"view": "SimpleProgressLayout"
 },{
-	"title": "Demo: Micro-service",
+	"title": "5. Demo: Micro-service",
 	"view": "MicroServiceLayout"
 },{
-	"title": "Obstacle: Short Of Cores",
+	"title": "6. Obstacle: Short Of Cores",
 	"view": "ShortCpuView"
 },{
-	"title": "Example: Operate Process",
+	"title": "7. Example: Operate Process",
 	"view": "OperateProcessView"
 },{
-	"title": "Obstacle: Manage Asynchronous",
+	"title": "8. Obstacle: Manage Asynchronous",
 	"view": "ObstacleAsynchronousView"
 },{
-	"title": "Example: Manage Asynchronous",
+	"title": "9. Example: Manage Asynchronous",
 	"view": "ExampleAsynchronousView"
+},{
+	"title": "10. Basic Concept: Semaphore",
+	"view": "SemaphoreConceptView"
+},{
+	"title": "11. Example: Semaphore",
+	"view": "SemaphoreExampleView"
+},{
+	"title": "12. Demo: Semaphore 1",
+	"view": "DemoSemaphore1View"
+},{
+	"title": "13. Demo: Semaphore 2",
+	"view": "DemoSemaphore2View"
 }]
