@@ -8,9 +8,18 @@
 	"title": "Demo: Delay Button",
 	"view": "DelayButtonLayout"
 },{
-	"title": "Fact: Short Of Cores",
+	"title": "Demo: Simple Progress",
+	"view": "SimpleProgressLayout"
+},{
+	"title": "Demo: Micro-service",
+	"view": "MicroServiceLayout"
+},{
+	"title": "Obstracle: Short Of Cores",
 	"view": "ShortCpuView"
 },{
 	"title": "Example: Operate Process",
 	"view": "OperateProcessView"
+},{
+	"title": "Obstracle: Manage Asynchronous",
+	"view": "ObstracleAsynchronousView"
 }]

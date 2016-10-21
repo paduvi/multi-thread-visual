@@ -5,8 +5,6 @@
  */
 package com.chotoxautinh.controller;
 
-import java.util.Date;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -25,27 +23,37 @@ public class DelayButtonController {
 
 	@FXML
 	private void handleBlockingAction(ActionEvent event) {
-		Date start = new Date();
-		textMsg.setVisible(false);
-		blockingIndicator.setVisible(true);
-		while (new Date().getTime() - start.getTime() <= 5000)
-			; // 5000ms
-		textMsg.setVisible(true);
-		blockingIndicator.setVisible(false);
+		try {
+			textMsg.setVisible(false);
+			blockingIndicator.setVisible(true);
+			Thread.sleep(5000); // 5000ms
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			textMsg.setVisible(true);
+			blockingIndicator.setVisible(false);
+		}
 	}
 
 	@FXML
 	private void handleNonBlockingAction(ActionEvent event) {
-		Date start = new Date();
-		textMsg.setVisible(false);
-		nonBlockingIndicator.setVisible(true);
-		new Thread() {
+		Thread backgroundThread = new Thread() {
 			public void run() {
-				while (new Date().getTime() - start.getTime() <= 5000)
-					; // 5000ms
-				textMsg.setVisible(true);
-				nonBlockingIndicator.setVisible(false);
+				try {
+					textMsg.setVisible(false);
+					nonBlockingIndicator.setVisible(true);
+					sleep(5000); // 5000ms
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} finally {
+					textMsg.setVisible(true);
+					nonBlockingIndicator.setVisible(false);
+				}
 			};
-		}.start();
+		};
+		backgroundThread.setDaemon(true);
+		backgroundThread.start();
 	}
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.FlowPane?>
+
+<FlowPane alignment="CENTER" columnHalignment="CENTER" orientation="VERTICAL" prefHeight="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chotoxautinh.controller.SimpleProgressController">
+   <children>
+      <Label fx:id="statusLabel" text="Not Started...">
+         <FlowPane.margin>
+            <Insets bottom="15.0" />
+         </FlowPane.margin>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#handleBlockingAction" text="Blocking Button">
+         <FlowPane.margin>
+            <Insets bottom="15.0" top="15.0" />
+         </FlowPane.margin>
+      </Button>
+      <Button defaultButton="true" mnemonicParsing="false" onAction="#handleNonBlockingAction" text="Non-Blocking Button">
+         <FlowPane.margin>
+            <Insets bottom="15.0" top="15.0" />
+         </FlowPane.margin>
+      </Button>
+      <TextArea fx:id="textArea" prefWidth="500.0">
+         <FlowPane.margin>
+            <Insets top="15.0" />
+         </FlowPane.margin>
+      </TextArea>
+   </children>
+</FlowPane>
