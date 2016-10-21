@@ -1,9 +1,13 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
 
 .menuBtn {
-	-fx-background-color: none;
-	-fx-padding: 4.0px;
+	-fx-background-color: #4DB6AC;
+	-fx-padding: 5.0px;
 	-fx-cursor: hand;
+}
+
+.menuBtn:hover{
+	-fx-background-color: #26a69a;
 }
 
 .menuList {
@@ -17,11 +21,17 @@
 }
 
 .menuList .list-cell:filled{
-	-fx-text-fill: #FFF;
+	-fx-cursor: hand;
+	-fx-text-fill: #EEE;
 	-fx-font-weight: bold;
 	-fx-padding: 10.0px;
 	-fx-border-width: 0.0 0.0 1.0px 0.0;
 	-fx-border-color: #26a69a;
+}
+
+.menuList .list-cell:filled:hover{
+	-fx-background-color:  #5fba7d;
+	-fx-text-fill: #FFF;
 }
 
 .beginLayout{
