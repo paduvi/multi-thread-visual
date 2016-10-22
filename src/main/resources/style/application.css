@@ -20,6 +20,50 @@
 	-fx-background-color:  #4DB6AC;
 }
 
+.menuList .scroll-bar:horizontal ,
+.menuList  .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+ 
+/* The increment and decrement button CSS class of scrollbar */
+.menuList .increment-button ,.menuList .decrement-button {
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-cursor: hand;
+}
+ 
+/* The main scrollbar **track** CSS class  */
+.menuList .scroll-bar:horizontal .track ,
+.menuList .scroll-bar:vertical .track{
+     -fx-background-color: transparent;
+     -fx-border-color:transparent;
+     -fx-background-radius: 0.0em;
+}
+ 
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.menuList .scroll-bar:horizontal .thumb,
+.menuList .scroll-bar:vertical .thumb {
+    -fx-background-color:#26a69a;
+    -fx-background-insets: 0.0, 0.0, 0.0;
+    -fx-background-radius: 0.0em;
+}
+
+.menuList .scroll-bar:horizontal:hover .track ,
+.menuList .scroll-bar:horizontal:pressed .track ,
+.menuList .scroll-bar:vertical:hover .track,
+.menuList .scroll-bar:vertical:pressed .track{
+     -fx-background-color: derive(#009688 ,20.0%);
+
+	 -fx-opacity: 0.2;
+	 -fx-background-radius: 0.0em;
+}
+
+/* The main scrollbar **thumb** CSS class on event of "hover" and "pressed" */
+.menuList .scroll-bar .thumb:hover,
+.menuList .scroll-bar .thumb:pressed{
+    -fx-background-color: #009688;
+}
+
 .menuList .list-cell:filled{
 	-fx-cursor: hand;
 	-fx-text-fill: #EEE;

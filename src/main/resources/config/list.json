@@ -37,4 +37,10 @@
 },{
 	"title": "13. Demo: Semaphore 2",
 	"view": "DemoSemaphore2View"
+},{
+	"title": "14. Obstacle: DeadLock",
+	"view": "ObstacleDeadLockView"
+},{
+	"title": "15. Demo: DeadLock",
+	"view": "DeadLockExampleView"
 }]
