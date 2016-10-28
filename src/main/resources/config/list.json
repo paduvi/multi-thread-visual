@@ -38,9 +38,21 @@
 	"title": "13. Demo: Semaphore 2",
 	"view": "DemoSemaphore2View"
 },{
-	"title": "14. Obstacle: DeadLock",
+	"title": "14. Use Semaphore 1",
+	"view": "UseSemaphore1View"
+},{
+	"title": "15. Use Semaphore 2",
+	"view": "UseSemaphore2View"
+},{
+	"title": "16. Obstacle: DeadLock",
 	"view": "ObstacleDeadLockView"
 },{
-	"title": "15. Demo: DeadLock",
+	"title": "17. Demo: DeadLock",
 	"view": "DeadLockExampleView"
+},{
+	"title": "18. Problem: Producer - Consumer",
+	"view": "ProducerConsumerProblemView"
+},{
+	"title": "19. Step 1: Producer - Consumer",
+	"view": "ProducerConsumerStep1View"
 }]
